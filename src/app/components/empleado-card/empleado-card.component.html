@@ -1,0 +1,6 @@
+<div class="card shadow p-2 text-center">
+    <h3 class="fs-5">{{empleadito.nombre}} {{empleadito.apellidos}}</h3>
+    <p>Email: {{empleadito.email}}</p>
+    <p>Teléfono: {{empleadito.telefono}}</p>
+    <button class="btn btn-danger" [routerLink]="['/empleados', empleadito._id]">Ver detalle</button>
+</div>

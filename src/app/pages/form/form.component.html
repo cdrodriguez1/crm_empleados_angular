@@ -1,0 +1,41 @@
+<div class="fondo">
+    <section class="container">
+        <h1>{{tittle}} Empleado</h1>
+        <hr>
+
+        <form [formGroup]="empleadosForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" placeholder="introduce nombre" formControlName="nombre">
+            </div>
+
+            <div class="mb-3">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" class="form-control" placeholder="introduce apellidos" formControlName="apellidos">
+            </div>
+
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" placeholder="introduce email" formControlName="email">
+            </div>
+
+            <div class="mb-3">
+                <label for="telefono">Teléfono</label>
+                <input type="text" class="form-control" placeholder="introduce telefono" formControlName="telefono">
+            </div>
+
+            <div class="mb-3">
+                <label for="departamento">Departamento</label>
+                <input type="text" class="form-control" placeholder="introduce departamento"
+                    formControlName="departamento">
+            </div>
+
+            <div class="mb-3">
+                <label for="salario">Salario</label>
+                <input type="number" class="form-control" placeholder="introduce salario" formControlName="salario">
+            </div>
+
+            <input type="submit" class="btn btn-danger mt-3" [value]='tittle'>
+        </form>
+    </section>
+</div>
